@@ -60,7 +60,7 @@ jobs:
       - name: Build the book
         run: |
           makim pages.build
-          echo "opensciencelabs.org" > build/CNAME
+          echo "telehealthcareai.org" > build/CNAME
 
       # Push the book's HTML to github-pages
       - name: GitHub Pages action
