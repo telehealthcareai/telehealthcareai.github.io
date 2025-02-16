@@ -15,7 +15,7 @@ body {
   line-height: 1.6;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-size: 16px;
+  font-size: 18px;
   color: #6F8BA4;
   font-weight: 400;
   overflow-x: hidden;
@@ -360,7 +360,7 @@ a:focus {
   color: #222;
   font-family: "Exo", sans-serif;
   text-transform: capitalize;
-  font-size: 16px;
+  font-size: 18px;
   transition: all 0.25s ease;
 }
 #navbarmain .nav-link:hover,
@@ -725,7 +725,7 @@ a:focus {
   border-radius: 0px;
   margin: 0px 2px;
   text-transform: capitalize;
-  font-size: 16px;
+  font-size: 18px;
   padding: 0.6rem 1.5rem;
   cursor: pointer;
 }
@@ -761,7 +761,7 @@ a:focus {
 .doctor-inner-box .doctor-profile {
   overflow: hidden;
   position: relative;
-  box-shadow: 0px 8px 16px 0px rgba(200, 183, 255, 0.2);
+  box-shadow: 0px 8px 18px 0px rgba(200, 183, 255, 0.2);
 }
 .doctor-inner-box .doctor-profile .doctor-img {
   transition: all 0.35s ease;
@@ -1085,7 +1085,7 @@ a:focus {
   padding-bottom: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 
