@@ -25,8 +25,10 @@ extra_javascript:
   - plugins/jquery/jquery.js
 
 nav:
+  - Home: "index.md"
   - About: "about/index.md"
-
+  - Team: "team/index.md"
+  
 markdown_extensions:
   - toc:
       permalink: " #"
@@ -51,7 +53,7 @@ plugins:
       comments_path: "#__comments"
       date_from_meta:
         as_creation: "date"
-        as_update: false
+        as_update: "last_modified"
         datetime_format: "%Y-%m-%d"
         default_timezone: Europe/Paris
         default_time: "09:30"
