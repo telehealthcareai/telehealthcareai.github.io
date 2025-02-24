@@ -2,10 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://telehealthcareai.org/</loc>
-         <lastmod>2025-02-16</lastmod>
+         <lastmod>2025-02-24</lastmod>
     </url>
     <url>
          <loc>https://telehealthcareai.org/about/</loc>
-         <lastmod>2025-02-16</lastmod>
+         <lastmod>2025-02-24</lastmod>
+    </url>
+    <url>
+         <loc>https://telehealthcareai.org/about/team/</loc>
+         <lastmod>2025-02-24</lastmod>
     </url>
 </urlset>
