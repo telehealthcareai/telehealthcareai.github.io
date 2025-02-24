@@ -26,8 +26,8 @@ extra_javascript:
 
 nav:
   - Home: "index.md"
-  - About: 
-    - Team: "about/team/index.md"
+  - About:
+      - Team: "about/team/index.md"
 
 markdown_extensions:
   - toc:

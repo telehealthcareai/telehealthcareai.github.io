@@ -22,4 +22,5 @@ teams:
           Passionate about developing intelligent systems and contributing to the open-source community.
         image_url: https://avatars.githubusercontent.com/u/108522472?v=4
 ---
+
 # Team
