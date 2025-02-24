@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+  {% for group in page.meta["teams"] %}
+  <div class="row">
+    <div class="col-md-12 mx-auto pt-3">
+      <h2>{{ group.name }}</h2>
+      <div class="row row-cols-1 row-cols-md-3">
+        {% for member in group.members %}
+        <div class="col">
+          <div class="card p-0 mt-3 fade-in-animation">
+            <img src="{{ member.image_url }}" class="card-img-top m-0" />
+            <div class="card-body">
+              <h3 class="card-title">{{ member.name }}</h3>
+              <p class="card-text">{{ member.bio }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+{% endblock content %}
