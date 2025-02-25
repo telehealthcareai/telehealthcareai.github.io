@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="container pt-3">
+  <div class="section-header">
+    <h2>{{ page.meta["page_title"] }}</h2>
+  </div>
+  {{ page.content }}
+</section>
+{% endblock content %}

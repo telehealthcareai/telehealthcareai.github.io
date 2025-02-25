@@ -1,0 +1,114 @@
+/* Home Page */
+
+/* Banner Section */
+.banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+/* Section Heading */
+.section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* About Section */
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Service Section (Our Projects) */
+.service h3 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+.service p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Partners Section */
+.clients h3 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+}
+
+.clients img {
+    max-width: 200px;
+    margin-bottom: 15px;
+}
+
+/* Partner Section */
+.partner p {
+    font-size: 1.1rem;
+}
+
+/* Affiliate Section */
+.affiliate p {
+    font-size: 1.1rem;
+}
+
+/* Formula Page */
+.section-header {
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.formula-section {
+    margin-bottom: 40px;
+}
+
+.formula-section h5 {
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.formula-section p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* COC Page */
+
+.section-header {
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.coc-section {
+    margin-bottom: 40px;
+}
+
+.coc-section h5 {
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.coc-section p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.coc-section ul {
+    margin-bottom: 20px;
+}
+
+.coc-section a {
+    font-weight: bold;
+}
+
+.coc-section a:hover {
+    text-decoration: none;
+}

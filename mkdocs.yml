@@ -17,6 +17,7 @@ theme:
 
 extra_css:
   - css/style.css
+  - css/index.css
 
 extra_javascript:
   - js/script.js
