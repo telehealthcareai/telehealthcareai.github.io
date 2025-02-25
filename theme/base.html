@@ -17,8 +17,10 @@
     <link rel="stylesheet" href="/plugins/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="/plugins/icofont/icofont.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    {% block header_extra %}
+    {% endblock header_extra %}
   </head>
-  <body id="top">
+  <body id="top" style="background-color: #f4f4f9; color: #333;">
     <header>
       <nav class="navbar navbar-expand-lg navigation" id="navbar">
         <div class="container">
@@ -49,15 +51,15 @@
               <li class="nav-item">
                 <a class="nav-link" href="/about/team/">Team</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about/formula">Our Formula</a>
+              <li class="nav-item">
+                <a class="nav-link" href="/about/coc">Code Of Conduct</a>
+              </li>
+              </li>
               <!--
               <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="#partners">Partners</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
               </li>
               -->
             </ul>
@@ -65,7 +67,7 @@
         </div>
       </nav>
     </header>
-    <div class=container>
+    <div class=container-fluid>
       <section class="content-inner">
         {% block content %}
         <section>
