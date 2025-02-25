@@ -28,6 +28,8 @@ nav:
   - Home: "index.md"
   - About:
       - Team: "about/team/index.md"
+      - Out Formula: "about/formula/index.md"
+      - Code Of Conduct: "about/coc/index.md"
 
 markdown_extensions:
   - toc:
