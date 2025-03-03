@@ -1,15 +1,12 @@
 /* Home Page */
-
 /* Banner Section */
 .banner h1 {
     font-size: 3rem;
     font-weight: bold;
 }
-
 .banner p {
     font-size: 1.2rem;
 }
-
 /* Section Heading */
 .section h2 {
     font-size: 2.5rem;
@@ -17,44 +14,46 @@
     margin-bottom: 30px;
     text-align: center;
 }
-
 /* About Section */
 #about p {
     font-size: 1.1rem;
     line-height: 1.8;
 }
-
 /* Service Section (Our Projects) */
 .service h3 {
     font-size: 1.75rem;
     margin-bottom: 20px;
 }
-
 .service p {
     font-size: 1.1rem;
     line-height: 1.7;
 }
-
 /* Partners Section */
 .clients h3 {
     font-size: 1.75rem;
     margin-bottom: 15px;
 }
-
 .clients img {
     max-width: 200px;
     margin-bottom: 15px;
 }
-
 /* Partner Section */
 .partner p {
     font-size: 1.1rem;
 }
-
 /* Affiliate Section */
 .affiliate p {
     font-size: 1.1rem;
 }
+
+.hover-opacity:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+
+
+
 
 /* Formula Page */
 .section-header {
@@ -79,7 +78,6 @@
 }
 
 /* COC Page */
-
 .section-header {
     text-align: left;
     font-size: 2rem;

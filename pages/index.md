@@ -61,32 +61,42 @@ template: home.html
 </section>
 
 <!-- Partners Section -->
-<section id="partners" class="section clients gray-bg">
-  <div class="container">
-    <h2>Our Partners</h2>
-    <div>
-      <h3>Open Science Labs (OSL)</h3>
-      <img src="/images/partners/osl.png" alt="Open Science Labs" />
-      <p>
-        At Open Science Labs (OSL), we are dedicated to advancing scientific
-        research through collaboration, innovation, and education. OSL's mission
-        is to create a more inclusive, transparent, and accessible scientific
-        community.
-      </p>
-      <p>Through this partnership:</p>
-      <ul>
-        <li>
-          OSL provides infrastructure for open-source projects development.
-        </li>
-        <li>
-          OSL connects contributors to TeleHealthCareAI projects for internship
-          opportunities.
-        </li>
-        <li>
-          TeleHealthCareAI sponsors a study group to promote knowledge-sharing
-          and skill development.
-        </li>
-      </ul>
+<section id="partners" class="section clients py-5">
+  <div class="container-fluid">
+    <h2 class="text-center mb-5">Our Partners</h2>
+    <!-- Simple Right-to-Left Carousel -->
+    <div id="partnersCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+      <div class="carousel-inner">
+        <!-- First Partner -->
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="card shadow">
+              <div class="row no-gutters">
+                <div class="col-lg-3 col-md-4 d-flex align-items-center justify-content-center p-4">
+                  <img src="/images/partners/osl.png" alt="Open Science Labs" class="img-fluid" style="max-height: 120px;">
+                </div>
+                <div class="col-lg-9 col-md-8">
+                  <div class="card-body py-4 px-md-5">
+                    <h3 class="card-title">Open Science Labs (OSL)</h3>
+                    <p class="card-text">
+                      At Open Science Labs (OSL), we are dedicated to advancing scientific
+                      research through collaboration, innovation, and education. OSL's mission
+                      is to create a more inclusive, transparent, and accessible scientific
+                      community.
+                    </p>
+                    <p class="card-text">Through this partnership:</p>
+                    <ul>
+                      <li>OSL provides infrastructure for open-source projects development.</li>
+                      <li>OSL connects contributors to TeleHealthCareAI projects for internship opportunities.</li>
+                      <li>TeleHealthCareAI sponsors a study group to promote knowledge-sharing and skill development.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
