@@ -7,7 +7,7 @@ template: home.html
     <div class="pt-5 row">
       <div class="col-lg-12">
         <h1>Welcome to TeleHealthCareAI</h1>
-        <p>Advancing telemedicine through artificial intelligence.</p>
+        <p>Advancing telemedicine through Artificial Intelligence.</p>
       </div>
     </div>
   </div>

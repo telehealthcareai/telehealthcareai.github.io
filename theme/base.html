@@ -16,6 +16,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" />
     <link rel="stylesheet" href="/plugins/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="/plugins/icofont/icofont.min.css" />
+
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/index.css"/>
     {% block header_extra %}
@@ -83,52 +84,70 @@
         </section>
         {% endblock content %}
       </section>
-    <div>
-    <!-- Updated Footer inspired by WorldQuant University -->
-    <footer class="footer pt-5" style="background-color: #2C3E50; color: #ECF0F1;">
+    </div>
+    <footer class="footer pt-5 pb-4" style="background-color: #50639b; color: #ECF0F1;">
       <div class="container">
-        <div class="row">
-          <!-- Logo and Description Column -->
-          <div class="col-md-8 mb-5 mb-md-0">
-            <div class="p-3 d-inline-block rounded mb-4">
-              <img
-                src="/images/logo-small-horizontal-black.png"
-                alt="TeleHealthCareAI"
-                class="img-fluid"
-                style="height: 60px; width: auto; color: transparent"
-              />
+        <div class="row justify-content-between align-items-start gy-4">
+
+          <!-- Logo and Description Column (Left-aligned) -->
+          <div class="col-lg-8 col-md-12 mb-4">
+            <div class="p-0 d-inline-block rounded mb-4">
+              <img src="/images/logo-small-horizontal-black.png" alt="TeleHealthCareAI"
+                class="img-fluid" style="height: 60px; width: auto;" />
             </div>
-            <p class="mb-4">
+            <p class="mb-0 fs-6 lh-lg">
               TeleHealthCareAI is a leader in advancing AI-powered telemedicine solutions,
               delivering innovative tools that expand access to healthcare services and
               improve patient outcomes worldwide.
             </p>
+
             <!-- Social Media Icons -->
-            <div class="social-icons d-flex gap-3 mt-4">
-              <a href="#" class="text-white hover-opacity"><i class="icofont-facebook" style="font-size: 24px;"></i></a>
-              <a href="#" class="text-white hover-opacity"><i class="icofont-instagram" style="font-size: 24px;"></i></a>
-              <a href="#" class="text-white hover-opacity"><i class="icofont-linkedin" style="font-size: 24px;"></i></a>
-              <a href="#" class="text-white hover-opacity"><i class="icofont-github" style="font-size: 24px;"></i></a>
+            <div class="d-flex mt-4 gap-3">
+              <a href="#" class="social-icon facebook hover-opacity">
+                <i class="icofont-facebook fs-4"></i>
+              </a>
+              <a href="#" class="social-icon instagram hover-opacity">
+                <i class="icofont-instagram fs-4"></i>
+              </a>
+              <a href="#" class="social-icon linkedin hover-opacity">
+                <i class="icofont-linkedin fs-4"></i>
+              </a>
+              <a href="#" class="social-icon github hover-opacity">
+                <i class="icofont-github fs-4"></i>
+              </a>
             </div>
           </div>
 
-          <!-- About Column -->
-          <div class="col-md-4">
-            <h5 class="mb-4 fw-bold" style="color: black;">About</h5>
+          <!-- About Column (Right-aligned) -->
+          <div class="col-lg-2 col-md-12 ms-auto">
+            <h5 class="footer-heading mb-4 fw-bold text-black">About</h5>
             <ul class="list-unstyled">
-              <li class="mb-3"><a href="/about/team/" class="text-white text-decoration-none hover-opacity">Our Team</a></li>
-              <li class="mb-3"><a href="/about/formula/" class="text-white text-decoration-none hover-opacity">Our Formula</a></li>
-              <li class="mb-3"><a href="/about/coc/" class="text-white text-decoration-none hover-opacity">Code of Conduct</a></li>
+              <li class="mb-3">
+                <a href="/about/team/" class="footer-link text-white text-decoration-none py-1">
+                   Our Team
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="/about/formula/" class="footer-link text-white text-decoration-none py-1">
+                  Our Formula
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="/about/coc/" class="footer-link text-white text-decoration-none py-1">
+                   Code of Conduct
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
         <!-- Copyright -->
-        <div class="row mt-4 pt-4 border-top border-secondary">
+        <div class="row mt-4 pt-4 border-top border-secondary text-center">
           <div class="col-12">
-            <p class="mb-0">© 2017-2025 TeleHealthCareAI. All rights reserved.</p>
+            <p class="mb-0 fs-6 text-white">© 2017-2025 TeleHealthCareAI. All rights reserved.</p>
           </div>
         </div>
+
       </div>
     </footer>
     <script src="/plugins/jquery/jquery.js"></script>
