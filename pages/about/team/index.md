@@ -21,6 +21,12 @@ teams:
           Data Science, open-source enthusiast, with experience in Python and JavaScript.
           Passionate about developing intelligent systems and contributing to the open-source community.
         image_url: https://avatars.githubusercontent.com/u/108522472?v=4
+
+        - name: Jigyasu
+        bio: |
+          Interested in artificially intelligent systems.
+          Perpetually stupid, curious and love OSS.
+        image_url: https://avatars.githubusercontent.com/u/94278611?v=4
 ---
 
 # Team
