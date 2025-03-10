@@ -16,9 +16,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" />
     <link rel="stylesheet" href="/plugins/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="/plugins/icofont/icofont.min.css" />
+
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/index.css"/>
+    
+    
   </head>
-  <body id="top">
+  <body id="top" style="background-color: #f4f4f9; color: #333;">
     <header>
       <nav class="navbar navbar-expand-lg navigation" id="navbar">
         <div class="container">
@@ -28,6 +32,7 @@
               alt=""
               class="img-fluid"
               style="height: 50px"
+
             />
           </a>
           <button
@@ -49,15 +54,15 @@
               <li class="nav-item">
                 <a class="nav-link" href="/about/team/">Team</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about/formula">Our Formula</a>
+              <li class="nav-item">
+                <a class="nav-link" href="/about/coc">Code of Conduct</a>
+              </li>
+              </li>
               <!--
               <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="#partners">Partners</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
               </li>
               -->
             </ul>
@@ -65,7 +70,7 @@
         </div>
       </nav>
     </header>
-    <div class=container>
+    <div class=container-fluid>
       <section class="content-inner">
         
         <section>
@@ -73,31 +78,34 @@
             <div class="col-md-12 mx-auto">
               
                 <section class="banner">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center pt-5">
+  <div class="container text-center">
+    <div class="pt-5 row">
+      <div class="col-lg-12">
         <h1>Welcome to TeleHealthCareAI</h1>
-        <p>Advancing telemedicine through artificial intelligence.</p>
+        <p>Advancing telemedicine through Artificial Intelligence.</p>
       </div>
     </div>
   </div>
 </section>
+
+<!-- About Section -->
 <section id="about" class="section about gray-bg">
-<div class="container">
-  <h2>About TeleHealthCareAI</h2>
-  <p>
+  <div class="container">
+    <h2>About TeleHealthCareAI</h2>
+    <p>
       TeleHealthCareAI is a pioneering initiative dedicated to advancing
-      telemedicine through artificial intelligence. Our mission is to build
-      a dynamic network of healthcare projects that leverage AI to enhance
-      remote diagnosis, treatment, and patient care. Currently,
-      TeleHealthCareAI incubates two flagship projects: SecondDX (<a
-      href="https://seconddx.com"
-      >seconddx.com</a
-      >) and Mhai (<a href="https://mymhai.com">mymhai.com</a>), both of
-      which are harnessing AI to revolutionize healthcare services.
-  </p>
+      telemedicine through artificial intelligence. Our mission is to build a
+      dynamic network of healthcare projects that leverage AI to enhance remote
+      diagnosis, treatment, and patient care. Currently, TeleHealthCareAI
+      incubates two flagship projects: <a href="https://seconddx.com"
+        ><strong>SecondDX</strong></a
+      > and <a href="https://mymhai.com"><strong>Mhai</strong></a>, both of which
+      are harnessing AI to revolutionize healthcare services.
+    </p>
   </div>
 </section>
+
+<!-- Projects Section -->
 <section id="projects" class="section service">
   <div class="container">
     <h2>Our Projects</h2>
@@ -108,12 +116,9 @@
           Mhai team is committed to making mental health support accessible,
           immediate, and personalized. Using state-of-the-art AI, Mhai's
           platform provides early intervention tools to help individuals
-          navigate mental health challenges before they escalate. Mhai's
-          mission is to seamlessly blend technology with human empathy,
-          ensuring that mental well-being resources are readily available.
-          Whether you seek companionship through AI interactions or
-          professional guidance, Mhai is focused to support you at every
-          step.
+          navigate mental health challenges before they escalate. Mhai's mission
+          is to seamlessly blend technology with human empathy, ensuring that
+          mental well-being resources are readily available.
         </p>
       </div>
       <div class="col-lg-6">
@@ -123,43 +128,55 @@
           insights, offering reliable second opinions on diagnoses. By
           integrating anamnesis records, MRI scans, CT scans, and laboratory
           test results, SecondDX's platform enhances diagnostic accuracy and
-          provides comprehensive health prognostics. SecondDX bridges the
-          gap between advanced AI technology and medical expertise, ensuring
-          better-informed healthcare decisions.
+          provides comprehensive health prognostics.
         </p>
       </div>
     </div>
   </div>
 </section>
-<section id="partners" class="section clients gray-bg">
-  <div class="container">
-    <h2>Our Partners</h2>
-    <div>
-      <h3>Open Science Labs (OSL)</h3>
-      <img src="/images/partners/osl.png" alt="Open Science Labs" />
-      <p>
-        At Open Science Labs (OSL), we are dedicated to advancing scientific
-        research through collaboration, innovation, and education. OSL's
-        mission is to create a more inclusive, transparent, and accessible
-        scientific community.
-      </p>
-      <p>Through this partnership:</p>
-      <ul>
-        <li>
-          OSL provides infrastructure for open-source projects development.
-        </li>
-        <li>
-          OSL connects contributors to TeleHealthCareAI projects for
-          internship opportunities.
-        </li>
-        <li>
-          TeleHealthCareAI sponsors a study group to promote
-          knowledge-sharing and skill development.
-        </li>
-      </ul>
+
+<!-- Partners Section -->
+<section id="partners" class="section clients py-5">
+  <div class="container-fluid">
+    <h2 class="text-center mb-5">Our Partners</h2>
+    <!-- Simple Right-to-Left Carousel -->
+    <div id="partnersCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+      <div class="carousel-inner">
+        <!-- First Partner -->
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="card shadow">
+              <div class="row no-gutters">
+                <div class="col-lg-3 col-md-4 d-flex align-items-center justify-content-center p-4">
+                  <img src="/images/partners/osl.png" alt="Open Science Labs" class="img-fluid" style="max-height: 120px;">
+                </div>
+                <div class="col-lg-9 col-md-8">
+                  <div class="card-body py-4 px-md-5">
+                    <h3 class="card-title">Open Science Labs (OSL)</h3>
+                    <p class="card-text">
+                      At Open Science Labs (OSL), we are dedicated to advancing scientific
+                      research through collaboration, innovation, and education. OSL's mission
+                      is to create a more inclusive, transparent, and accessible scientific
+                      community.
+                    </p>
+                    <p class="card-text">Through this partnership:</p>
+                    <ul>
+                      <li>OSL provides infrastructure for open-source projects development.</li>
+                      <li>OSL connects contributors to TeleHealthCareAI projects for internship opportunities.</li>
+                      <li>TeleHealthCareAI sponsors a study group to promote knowledge-sharing and skill development.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
+<!-- Become a Partner Section -->
 <section id="be-partner" class="section partner">
   <div class="container">
     <h2>Become a Partner</h2>
@@ -171,42 +188,46 @@
     <p>
       To explore partnership opportunities, please send your proposal to
       <a href="mailto:connect@telehealthcareai.org"
-      >connect@telehealthcareai.org</a>.
+        ><strong>connect@telehealthcareai.org</strong></a
+      >.
     </p>
   </div>
 </section>
+
+<!-- Affiliate Section -->
 <section id="affiliate" class="section affiliate gray-bg">
   <div class="container">
     <h2>Affiliate Your Project</h2>
     <p>
-      Are you working on an AI-driven healthcare project? If so, we invite
-      you to become part of the TeleHealthCareAI network. By affiliating
-      with us, your project can benefit from collaboration opportunities,
-      shared resources, and integration with like-minded initiatives. To
-      affiliate your project, please email
+      Are you working on an AI-driven healthcare project? If so, we invite you
+      to become part of the TeleHealthCareAI network. By affiliating with us,
+      your project can benefit from collaboration opportunities, shared
+      resources, and integration with like-minded initiatives. To affiliate your
+      project, please email
       <a href="mailto:connect@telehealthcareai.org"
-      >connect@telehealthcareai.org</a>
+        >connect@telehealthcareai.org</a
+      >
       with your proposal.
     </p>
   </div>
 </section>
+
+<!-- Open-Source Commitment Section -->
 <section id="opensource" class="section open-source">
   <div class="container">
     <h2>Commitment to Open-Source Innovation</h2>
     <p>
-      Open-source development is at the heart of TeleHealthCareAI. We
-      actively support and contribute to open-source projects, ensuring that
-      cutting-edge AI tools remain accessible to the global healthcare
-      community. Through our partnership with Open Science Labs, we:
+      Open-source development is at the heart of TeleHealthCareAI. We actively
+      support and contribute to open-source projects, ensuring that cutting-edge
+      AI tools remain accessible to the global healthcare community. Through our
+      partnership with Open Science Labs, we:
     </p>
     <ul>
       <li>Support open-source projects maintenance.</li>
+      <li>Provide infrastructure for new AI-driven open-source projects.</li>
       <li>
-      Provide infrastructure for new AI-driven open-source projects.
-      </li>
-      <li>
-      Foster a community of developers, researchers, and healthcare
-      professionals dedicated to open collaboration.
+        Foster a community of developers, researchers, and healthcare
+        professionals dedicated to open collaboration.
       </li>
     </ul>
   </div>
@@ -217,22 +238,70 @@
         </section>
         
       </section>
-    <div>
-    <footer class="footer section pt-5 mt-3" style="background-color: #aec3b0">
+    </div>
+    <footer class="footer pt-5 pb-4" style="background-color: #50639b; color: #ECF0F1;">
       <div class="container">
-        <div class="row">
-          <div class="col">
-            <img
-              src="/images/logo-small-horizontal.png"
-              alt=""
-              class="img-fluid"
-              height="100px"
-            />
-            <p>
-              TeleHealthCareAI - Advancing AI-powered telemedicine solutions.
+        <div class="row justify-content-between align-items-start gy-4">
+
+          <!-- Logo and Description Column (Left-aligned) -->
+          <div class="col-lg-8 col-md-12 mb-4">
+            <div class="p-0 d-inline-block rounded mb-4">
+              <img src="/images/logo-small-horizontal-black.png" alt="TeleHealthCareAI"
+                class="img-fluid" style="height: 60px; width: auto;" />
+            </div>
+            <p class="mb-0 fs-6 lh-lg">
+              TeleHealthCareAI is a leader in advancing AI-powered telemedicine solutions,
+              delivering innovative tools that expand access to healthcare services and
+              improve patient outcomes worldwide.
             </p>
+
+            <!-- Social Media Icons -->
+            <div class="d-flex mt-4 gap-3">
+              <a href="#" class="social-icon facebook hover-opacity">
+                <i class="icofont-facebook fs-4"></i>
+              </a>
+              <a href="#" class="social-icon instagram hover-opacity">
+                <i class="icofont-instagram fs-4"></i>
+              </a>
+              <a href="#" class="social-icon linkedin hover-opacity">
+                <i class="icofont-linkedin fs-4"></i>
+              </a>
+              <a href="#" class="social-icon github hover-opacity">
+                <i class="icofont-github fs-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- About Column (Right-aligned) -->
+          <div class="col-lg-2 col-md-12 ms-auto">
+            <h5 class="footer-heading mb-4 fw-bold text-black">About</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a href="/about/team/" class="footer-link text-white text-decoration-none py-1">
+                   Our Team
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="/about/formula/" class="footer-link text-white text-decoration-none py-1">
+                  Our Formula
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="/about/coc/" class="footer-link text-white text-decoration-none py-1">
+                   Code of Conduct
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
+
+        <!-- Copyright -->
+        <div class="row mt-4 pt-4 border-top border-secondary text-center">
+          <div class="col-12">
+            <p class="mb-0 fs-6 text-white">© 2017-2025 TeleHealthCareAI. All rights reserved.</p>
+          </div>
+        </div>
+
       </div>
     </footer>
     <script src="/plugins/jquery/jquery.js"></script>
