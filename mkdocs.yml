@@ -17,6 +17,7 @@ theme:
 
 extra_css:
   - css/style.css
+  - css/index.css
 
 extra_javascript:
   - js/script.js
@@ -28,6 +29,8 @@ nav:
   - Home: "index.md"
   - About:
       - Team: "about/team/index.md"
+      - Out Formula: "about/formula/index.md"
+      - Code of Conduct: "about/coc/index.md"
 
 markdown_extensions:
   - toc:

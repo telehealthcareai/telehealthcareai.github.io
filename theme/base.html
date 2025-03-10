@@ -16,9 +16,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" />
     <link rel="stylesheet" href="/plugins/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="/plugins/icofont/icofont.min.css" />
+
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/index.css"/>
+    {% block header_extra %}
+    {% endblock header_extra %}
   </head>
-  <body id="top">
+  <body id="top" style="background-color: #f4f4f9; color: #333;">
     <header>
       <nav class="navbar navbar-expand-lg navigation" id="navbar">
         <div class="container">
@@ -28,6 +32,7 @@
               alt=""
               class="img-fluid"
               style="height: 50px"
+
             />
           </a>
           <button
@@ -49,15 +54,15 @@
               <li class="nav-item">
                 <a class="nav-link" href="/about/team/">Team</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about/formula">Our Formula</a>
+              <li class="nav-item">
+                <a class="nav-link" href="/about/coc">Code of Conduct</a>
+              </li>
+              </li>
               <!--
               <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="#partners">Partners</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
               </li>
               -->
             </ul>
@@ -65,7 +70,7 @@
         </div>
       </nav>
     </header>
-    <div class=container>
+    <div class=container-fluid>
       <section class="content-inner">
         {% block content %}
         <section>
@@ -79,22 +84,70 @@
         </section>
         {% endblock content %}
       </section>
-    <div>
-    <footer class="footer section pt-5 mt-3" style="background-color: #aec3b0">
+    </div>
+    <footer class="footer pt-5 pb-4" style="background-color: #50639b; color: #ECF0F1;">
       <div class="container">
-        <div class="row">
-          <div class="col">
-            <img
-              src="/images/logo-small-horizontal.png"
-              alt=""
-              class="img-fluid"
-              height="100px"
-            />
-            <p>
-              TeleHealthCareAI - Advancing AI-powered telemedicine solutions.
+        <div class="row justify-content-between align-items-start gy-4">
+
+          <!-- Logo and Description Column (Left-aligned) -->
+          <div class="col-lg-8 col-md-12 mb-4">
+            <div class="p-0 d-inline-block rounded mb-4">
+              <img src="/images/logo-small-horizontal-black.png" alt="TeleHealthCareAI"
+                class="img-fluid" style="height: 60px; width: auto;" />
+            </div>
+            <p class="mb-0 fs-6 lh-lg">
+              TeleHealthCareAI is a leader in advancing AI-powered telemedicine solutions,
+              delivering innovative tools that expand access to healthcare services and
+              improve patient outcomes worldwide.
             </p>
+
+            <!-- Social Media Icons -->
+            <div class="d-flex mt-4 gap-3">
+              <a href="#" class="social-icon facebook hover-opacity">
+                <i class="icofont-facebook fs-4"></i>
+              </a>
+              <a href="#" class="social-icon instagram hover-opacity">
+                <i class="icofont-instagram fs-4"></i>
+              </a>
+              <a href="#" class="social-icon linkedin hover-opacity">
+                <i class="icofont-linkedin fs-4"></i>
+              </a>
+              <a href="#" class="social-icon github hover-opacity">
+                <i class="icofont-github fs-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- About Column (Right-aligned) -->
+          <div class="col-lg-2 col-md-12 ms-auto">
+            <h5 class="footer-heading mb-4 fw-bold text-black">About</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a href="/about/team/" class="footer-link text-white text-decoration-none py-1">
+                   Our Team
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="/about/formula/" class="footer-link text-white text-decoration-none py-1">
+                  Our Formula
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="/about/coc/" class="footer-link text-white text-decoration-none py-1">
+                   Code of Conduct
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
+
+        <!-- Copyright -->
+        <div class="row mt-4 pt-4 border-top border-secondary text-center">
+          <div class="col-12">
+            <p class="mb-0 fs-6 text-white">© 2017-2025 TeleHealthCareAI. All rights reserved.</p>
+          </div>
+        </div>
+
       </div>
     </footer>
     <script src="/plugins/jquery/jquery.js"></script>
