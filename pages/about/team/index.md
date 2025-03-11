@@ -25,7 +25,7 @@ teams:
         - name: Jigyasu
         bio: |
           Interested in artificially intelligent systems.
-          Perpetually stupid, curious and love OSS.
+          Perpetually curious and love OSS. Great with Python and libs in the PyData ecosystem.
         image_url: https://avatars.githubusercontent.com/u/94278611?v=4
 ---
 
