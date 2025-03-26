@@ -1,4 +1,4 @@
-# opensciencelabs.github.io
+# telehealthcareai.github.io
 
 A blog page for OpenScienceLabs with mkdocs site generator.
 
@@ -7,13 +7,13 @@ A blog page for OpenScienceLabs with mkdocs site generator.
 Clone the repository
 
 ```bash
-git clone git@github.com:opensciencelabs/opensciencelabs.github.io
-cd opensciencelabs.github.io
+git clone git@github.com:telehealthcareai/telehealthcareai.github.io
+cd telehealthcareai.github.io
 ```
 
 ```bash
 mamba env create -f conda/dev.yaml --yes
-conda activate osl-web
+conda activate thcai-web
 poetry install
 ```
 
