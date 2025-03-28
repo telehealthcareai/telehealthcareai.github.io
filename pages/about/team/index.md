@@ -21,11 +21,11 @@ teams:
           Data Science, open-source enthusiast, with experience in Python and JavaScript.
           Passionate about developing intelligent systems and contributing to the open-source community.
         image_url: https://avatars.githubusercontent.com/u/108522472?v=4
-    
+
       - name: Gift David
         bio: |
-        Data Scientist, Software Engineer, with experience in Python and JavaScript SQL, Mongodb to mention but a few.
-        Enthusiastic about Big data, AI...
+          Data Scientist, Software Engineer, with experience in Python and JavaScript SQL, Mongodb to mention but a few.
+          Enthusiastic about Big data, AI.
         image_url: https://avatars.githubusercontent.com/u/55253725?v=4
 ---
 
