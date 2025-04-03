@@ -27,6 +27,11 @@ teams:
           Data Scientist, Software Engineer, with experience in Python and JavaScript SQL, Mongodb to mention but a few.
           Enthusiastic about Big data, AI.
         image_url: https://avatars.githubusercontent.com/u/55253725?v=4
+
+      - name: Felipe Paes
+        bio: |
+          Developer passionate about building web systems, automation tools, and data pipelines using Python and JavaScript. Currently exploring AI agents and geospatial data solutions.
+        image_url: https://avatars.githubusercontent.com/u/12243928?v=4
 ---
 
 # Team
