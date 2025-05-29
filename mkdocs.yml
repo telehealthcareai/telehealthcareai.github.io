@@ -28,7 +28,7 @@ extra_javascript:
 nav:
   - Home: "index.md"
   - About:
-      - Team: "about/team/index.md"
+      - Affiliations: "about/affiliations/index.md"
       - Out Formula: "about/formula/index.md"
       - Code of Conduct: "about/coc/index.md"
 
