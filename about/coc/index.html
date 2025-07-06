@@ -1,78 +1,75 @@
-<!DOCTYPE html>
+
+
+
+
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>TeleHealthCareAI</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="TeleHealthCareAI - AI-powered telemedicine projects"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
-    />
-    <meta name="author" content="TeleHealthCareAI" />
-    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" />
-    <link rel="stylesheet" href="/plugins/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="/plugins/icofont/icofont.min.css" />
+<head>
+  <meta charset="utf-8">
+  <title>TeleHealthCareAI · Advancing Telemedicine with Open-Source AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="TeleHealthCareAI is an open-science initiative building AI-powered tele-medicine solutions.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/index.css"/>
+  <link rel="stylesheet" href="/plugins/bootstrap/bootstrap.min.css" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .btn-primary   { @apply inline-flex items-center justify-center rounded-lg bg-amber-500 px-5 py-3
+                            font-medium text-white shadow transition hover:bg-amber-600; }
+    .btn-secondary { @apply inline-flex items-center justify-center rounded-lg border border-white/70
+                            px-5 py-3 font-medium text-white hover:bg-white/10; }
+    .benefit-card  { @apply rounded-2xl bg-white p-6 shadow-lg transition hover:shadow-xl; }
+    .section-h2   { @apply text-center text-3xl font-semibold tracking-tight text-slate-900; }
+    .carousel-track { animation: scroll-x 25s linear infinite; }
+    @keyframes scroll-x { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+  </style>
+</head>
 
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/index.css"/>
-    
-    
-  </head>
-  <body id="top" style="background-color: #f4f4f9; color: #333;">
-    <header>
-      <nav class="navbar navbar-expand-lg navigation" id="navbar">
-        <div class="container">
-          <a class="navbar-brand" href="/">
-            <img
-              src="/images/logo-small-horizontal.png"
-              alt=""
-              class="img-fluid"
-              style="height: 50px"
+<body class="font-[Inter] text-slate-800 leading-relaxed">
 
-            />
-          </a>
-          <button
-            class="navbar-toggler collapsed"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarmain"
-            aria-controls="navbarmain"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="icofont-navigation-menu"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarmain">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/about/affiliations/">Affiliations</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/about/formula">Our Formula</a>
-              <li class="nav-item">
-                <a class="nav-link" href="/about/coc">Code of Conduct</a>
-              </li>
-              </li>
-              <!--
-              <li class="nav-item">
-                <a class="nav-link" href="#partners">Partners</a>
-              </li>
-              -->
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <div class=container-fluid>
-      <section class="content-inner">
-        
+
+<header class="fixed inset-x-0 top-0 z-50 bg-white/70 backdrop-blur shadow-sm">
+  <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+    <a href="/" class="text-xl font-bold text-sky-600">
+      <img
+        src="/images/logo-small-horizontal.png"
+        alt=""
+        class="img-fluid"
+        style="height: 50px"
+
+      />
+    </a>
+
+    <ul class="hidden gap-8 text-sm font-medium md:flex">
+      
+        <li><a href="/" class="text-slate-700 hover:text-sky-600">Home</a></li>
+      
+        <li><a href="/about/affiliations/" class="text-slate-700 hover:text-sky-600">Affiliations</a></li>
+      
+        <li><a href="/about/formula/" class="text-slate-700 hover:text-sky-600">Our Formula</a></li>
+      
+        <li><a href="/about/coc/" class="text-slate-700 hover:text-sky-600">Code of Conduct</a></li>
+      
+    </ul>
+
+    <a href="mailto:connect@telehealthcareai.org" class="btn-sm btn-primary hidden md:inline-flex">
+      Become a Partner
+    </a>
+  </nav>
+</header>
+
+
+
+<main class="pt-28">
+  <div class=container-fluid>
+    <section class="content-inner">
+      
 <section class="container pt-3">
   <div class="section-header">
     <h2>Code of Conduct</h2>
@@ -291,75 +288,47 @@
 </section>
 </section>
 
-      </section>
+    </section>
+  </div>
+</main>
+
+
+
+<footer class="bg-slate-900 py-16 text-slate-300">
+  <div class="mx-auto flex max-w-7xl flex-col gap-12 px-6 lg:flex-row lg:justify-between">
+    <div>
+      <a href="/" class="text-xl font-semibold text-white">TeleHealthCareAI</a>
+      <p class="mt-4 max-w-sm text-sm">
+        A leader in AI-powered telemedicine, delivering innovative tools that expand access to
+        healthcare and improve patient outcomes worldwide.
+      </p>
     </div>
-    <footer class="footer pt-5 pb-4" style="background-color: #50639b; color: #ECF0F1;">
-      <div class="container">
-        <div class="row justify-content-between align-items-start gy-4">
 
-          <!-- Logo and Description Column (Left-aligned) -->
-          <div class="col-lg-8 col-md-12 mb-4">
-            <div class="p-0 d-inline-block rounded mb-4">
-              <img src="/images/logo-small-horizontal-black.png" alt="TeleHealthCareAI"
-                class="img-fluid" style="height: 60px; width: auto;" />
-            </div>
-            <p class="mb-0 fs-6 lh-lg">
-              TeleHealthCareAI is a leader in advancing AI-powered telemedicine solutions,
-              delivering innovative tools that expand access to healthcare services and
-              improve patient outcomes worldwide.
-            </p>
+    <nav class="grid gap-4 text-sm">
+      
+        <a href="/" class="hover:text-white">Home</a>
+      
+        <a href="/about/affiliations/" class="hover:text-white">Affiliations</a>
+      
+        <a href="/about/formula/" class="hover:text-white">Our Formula</a>
+      
+        <a href="/about/coc/" class="hover:text-white">Code of Conduct</a>
+      
+    </nav>
+  </div>
 
-            <!-- Social Media Icons -->
-            <div class="d-flex mt-4 gap-3">
-              <a href="#" class="social-icon facebook hover-opacity">
-                <i class="icofont-facebook fs-4"></i>
-              </a>
-              <a href="#" class="social-icon instagram hover-opacity">
-                <i class="icofont-instagram fs-4"></i>
-              </a>
-              <a href="#" class="social-icon linkedin hover-opacity">
-                <i class="icofont-linkedin fs-4"></i>
-              </a>
-              <a href="#" class="social-icon github hover-opacity">
-                <i class="icofont-github fs-4"></i>
-              </a>
-            </div>
-          </div>
+  <p class="mt-12 text-center text-xs text-slate-500">
+    © 2017-2025 TeleHealthCareAI. All rights reserved.
+  </p>
+</footer>
 
-          <!-- About Column (Right-aligned) -->
-          <div class="col-lg-2 col-md-12 ms-auto">
-            <h5 class="footer-heading mb-4 fw-bold text-black">About</h5>
-            <ul class="list-unstyled">
-              <li class="mb-3">
-                <a href="/about/affiliations/" class="footer-link text-white text-decoration-none py-1">
-                   Affiliations
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="/about/formula/" class="footer-link text-white text-decoration-none py-1">
-                  Our Formula
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="/about/coc/" class="footer-link text-white text-decoration-none py-1">
-                   Code of Conduct
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
 
-        <!-- Copyright -->
-        <div class="row mt-4 pt-4 border-top border-secondary text-center">
-          <div class="col-12">
-            <p class="mb-0 fs-6 text-white">© 2017-2025 TeleHealthCareAI. All rights reserved.</p>
-          </div>
-        </div>
-
-      </div>
-    </footer>
-    <script src="/plugins/jquery/jquery.js"></script>
-    <script src="/plugins/bootstrap/bootstrap.min.js"></script>
-    <script src="/js/script.js"></script>
-  </body>
+<script>
+  const header = document.querySelector('header');
+  const solidClass = 'bg-white/90';
+  window.addEventListener('scroll', () => {
+    window.scrollY > 64 ? header.classList.add(solidClass) : header.classList.remove(solidClass);
+  });
+</script>
+</body>
 </html>
