@@ -12,41 +12,44 @@
 {% set benefits = [
   ('Open-Source First',
    'All our tools are developed in the open, ensuring global access and peer-review.',
-   'phosphor-code.svg'),
+   '/images/home/opensource.jpg'),
 
   ('Clinical-Grade AI',
    'We comply with rigorous medical standards while pushing the boundaries of machine learning.',
-   'phosphor-heartbeat.svg'),
+   '/images/home/clinic.jpg'),
 
   ('Global Community',
    'Researchers and clinicians from every continent collaborate in our network.',
-   'phosphor-globe.svg'),
+   '/images/home/global.jpg'),
 
   ('Transparent Governance',
    'Decision-making and finances are documented and open for scrutiny.',
-   'phosphor-eye.svg'),
+   '/images/home/decision.jpg'),
 ] %}
 
 {% set projects = [
   {
     'name': 'Mhai',
-    'slug': 'mhai',
-    'image': '/static/img/mhai_mock.png',
-    'summary': 'AI-assisted chat for triage & remote follow-ups—reducing average consultation time by 38 %.'
+    'url': 'https://github.com/mentalhealthai-org/mhai',
+    'image': 'https://raw.githubusercontent.com/mentalhealthai-org/mhai-web/refs/heads/main/src/backend/mhai_web/static/images/logo-big.png',
+    'summary': 'Mental Health Technology empowered by AI.'
   },
   {
-    'name': 'SecondDX',
-    'slug': 'seconddx',
-    'image': '/static/img/seconddx_mock.png',
-    'summary': 'Second-opinion platform that pairs radiology images with LLM-generated differential diagnoses.'
+    'name': 'SDX',
+    'url': 'https://github.com/seconddx/sdx',
+    'image': 'https://raw.githubusercontent.com/seconddx/seconddx-web/refs/heads/main/src/backend/seconddx_web/static/images/logo-big.png',
+    'summary': 'Technology for screening, diagnosis, and treatments empowered by AI.'
   },
 ] %}
 
 {% set partner_logos = [
-  ('/static/img/osl_logo.svg',  'Open Science Labs'),
-  ('/static/img/partner2.svg',   'Partner 2'),
-  ('/static/img/partner3.svg',   'Partner 3'),
-  ('/static/img/partner4.svg',   'Partner 4'),
+  {
+    'name': 'Open Science Labs',
+    'slug': 'osl',
+    'image': '/images/partners/osl.png',
+    'summary': 'At Open Science Labs (OSL), we are dedicated to advancing the scientific research through collaboration, innovation, and education.',
+    'url': 'https://opensciencelabs.org'
+  }
 ] %}
 
 {% extends "base.html" %}
@@ -55,10 +58,10 @@
 {# ---------- 4. HERO ---------------------------------------------------------------- #}
 <main>
 <section id="hero" class="relative isolate bg-gradient-to-br from-gray-950 to-gray-500 pt-32 pb-24 text-white">
-  <div class="absolute inset-0 bg-[url('../images/bg/slider-bg-1.jpg')] bg-cover bg-center mix-blend-overlay opacity-90"></div>
+  <div class="absolute inset-0 bg-[url('/images/bg/slider-bg-1.jpg')] bg-cover bg-center mix-blend-overlay opacity-90"></div>
 
   <div class="relative mx-auto max-w-3xl px-6 text-center">
-    <h1 class="text-4xl font-semibold md:text-6xl">
+    <h1 class="text-4xl font-semibold md:text-6xl text-white">
       Advancing telemedicine through <span class="text-amber-400">AI-powered open science</span>.
     </h1>
     <p class="mt-6 text-lg md:text-xl">
@@ -67,67 +70,183 @@
     </p>
 
     <div class="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-      <a href="mailto:connect@telehealthcareai.org" class="btn-primary">
+      <a href="mailto:connect@telehealthcareai.org" class="btn btn-sm btn-primary">
         Affiliate your Project
       </a>
-      <a href="#benefits" class="btn-secondary">Learn More</a>
+      <a href="#benefits" class="btn btn-sm btn-secondary">Learn More</a>
     </div>
   </div>
 </section>
 </main>
-{# ---------- 5. BENEFITS ------------------------------------------------------------ #}
-<section id="benefits" class="mx-auto max-w-7xl px-6 py-20">
-  <h2 class="section-h2">Why&nbsp;TeleHealthCareAI?</h2>
 
-  <div class="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-    {% for title, description, icon in benefits %}
-      <article class="benefit-card">
-        <img src="{{ icon }}" alt="" class="h-8 w-8 text-sky-600">
-        <h3 class="mt-4 text-lg font-semibold">{{ title }}</h3>
-        <p class="mt-2 text-sm text-slate-600">{{ description }}</p>
-      </article>
-    {% endfor %}
+{# ---------- ABOUT ----------------------------------------------------------- #}
+<section id="about" class="py-20">
+  <div class="mx-auto max-w-7xl grid gap-12 px-6 lg:grid-cols-2 lg:items-center">
+    <!-- Text -->
+    <div>
+      <h2 class="section-h2 text-left">About&nbsp;TeleHealthCareAI</h2>
+      <p class="mt-6 text-lg text-slate-700">
+        TeleHealthCareAI is a pioneering initiative dedicated to advancing telemedicine
+        through artificial intelligence using an open-source and open-science approach.
+        Our mission is to build a dynamic network of healthcare projects that leverage AI
+        to enhance remote diagnosis, treatment and patient care.
+      </p>
+    </div>
+
+    <!-- Optional illustration (replace src or remove block) -->
+    <div class="flex justify-center lg:justify-end">
+      <img src="/images/home/healthcare.jpg"
+           alt="TeleHealthCareAI illustration"
+           class="w-full max-w-md rounded-xl shadow-lg">
+    </div>
   </div>
 </section>
 
-{# ---------- 6. FLAGSHIP PROJECTS --------------------------------------------------- #}
-<section id="projects" class="bg-slate-50 py-20">
-  <div class="mx-auto max-w-7xl px-6">
-    <h2 class="section-h2">Flagship Projects</h2>
 
-    <div class="mt-14 flex flex-col gap-16">
-      {% for project in projects %}
-        <div class="flex flex-col items-center gap-12 lg:flex-row {% if loop.index is odd %}lg:flex-row-reverse{% endif %}">
-          <div class="w-full lg:w-1/2">
-            <img src="{{ project.image }}" alt="{{ project.name }} screenshot"
-                 class="w-full rounded-xl shadow-lg">
+{# ---------- BECOME A PARTNER (CTA banner) ----------------------------------- #}
+<section id="partner" class="bg-gradient-to-r from-sky-500 to-sky-700 py-16 text-center text-white">
+  <h2 class="section-h2 text-white">Become&nbsp;a&nbsp;Partner</h2>
+  <p class="mx-auto mt-4 max-w-2xl text-lg">
+    If you share our vision and want to support TeleHealthCareAI, we welcome partnerships
+    from organizations, research institutions and industry leaders.
+  </p>
+
+  <a href="mailto:connect@telehealthcareai.org?subject=Partnership%20Proposal"
+     class="btn btn-sm btn-secondary mt-8 border-white">
+    Send Your Proposal
+  </a>
+</section>
+
+
+{# ---------- AFFILIATE YOUR PROJECT ------------------------------------------ #}
+<section id="affiliate" class="py-20 bg-white">
+  <div class="mx-auto max-w-4xl px-6">
+    <article class="rounded-2xl bg-slate-50 p-10 shadow-sm hover:shadow-lg transition">
+      <h2 class="section-h2 !text-left">Affiliate&nbsp;Your&nbsp;Project</h2>
+      <p class="mt-4 text-slate-700">
+        Working on an AI-driven healthcare project? Join the TeleHealthCareAI network to
+        benefit from collaboration opportunities, shared resources and integration with
+        like-minded initiatives.
+      </p>
+      <p class="mt-2 text-slate-700">
+        Email your proposal to <a href="mailto:connect@telehealthcareai.org"
+        class="text-sky-700 underline">connect@telehealthcareai.org</a>.
+      </p>
+    </article>
+  </div>
+</section>
+
+{# ---------- WHY TELEHEALTHCAREAI (final card) -------------------------------- #}
+<section id="benefits" class="bg-white py-20">
+  <div class="mx-auto max-w-7xl px-6">
+    <h2 class="section-h2">Why&nbsp;TeleHealthCareAI?</h2>
+
+    <div class="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+      {% for title, description, icon in benefits %}
+        <article
+          class="group flex flex-col items-center rounded-2xl bg-slate-50 p-8 shadow-sm
+                 hover:shadow-lg transition">
+          <!-- Icon clipped into a perfect circle -->
+          <div class="h-20 w-20 rounded-full bg-amber-100 overflow-hidden flex items-center justify-center">
+            <img src="{{ icon }}" alt=""
+                 class="h-full w-full object-cover" />
           </div>
-          <div class="w-full lg:w-1/2">
-            <h3 class="text-2xl font-semibold text-slate-900">{{ project.name }}</h3>
-            <p class="mt-4 text-slate-700">{{ project.summary }}</p>
-            <a href="/projects/{{ project.slug }}"
-               class="mt-6 inline-flex items-center gap-2 text-sky-700 hover:text-sky-900">
-              Learn more
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"
-                   fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M9 5l7 7-7 7"/>
-              </svg>
-            </a>
-          </div>
-        </div>
+
+          <!-- Copy -->
+          <h3 class="mt-6 text-center text-lg font-semibold text-slate-900">
+            {{ title }}
+          </h3>
+          <p class="mt-2 text-center text-sm text-slate-600">
+            {{ description }}
+          </p>
+        </article>
       {% endfor %}
     </div>
   </div>
 </section>
 
-{# ---------- 7. PARTNER LOGOS STRIP ------------------------------------------------- #}
-<section id="partners" class="py-16">
-  <div class="mx-auto max-w-6xl overflow-hidden px-6">
-    <h2 class="sr-only">Institutional Support</h2>
-    <div class="whitespace-nowrap carousel-track flex items-center gap-16">
-      {% for src, alt in partner_logos * 2 %} {# duplicated for seamless loop #}
-        <img src="{{ src }}" alt="{{ alt }}" class="h-10 w-auto opacity-80 grayscale hover:opacity-100 hover:grayscale-0">
+
+{# ---------- 6. FLAGSHIP PROJECTS (card grid) -------------------------------- #}
+<section id="projects" class="bg-slate-50 py-20">
+  <div class="mx-auto max-w-7xl px-6">
+    <h2 class="section-h2">Flagship Projects</h2>
+
+    <div class="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {% for project in projects %}
+        <article class="group flex flex-col rounded-2xl bg-white p-6 shadow hover:shadow-lg transition">
+          <!-- Logo / image -->
+          <div class="flex h-32 items-center justify-center">
+            <img src="{{ project.image }}"
+                 alt="{{ project.name }} logo"
+                 class="max-h-24 w-auto object-contain" />
+          </div>
+
+          <!-- Copy -->
+          <h3 class="mt-6 text-lg font-semibold text-slate-900">{{ project.name }}</h3>
+          <p class="mt-2 flex-1 text-sm text-slate-600">{{ project.summary }}</p>
+
+          <!-- CTA -->
+          <a href="{{ project.url }}"
+             class="mt-6 inline-flex items-center gap-2 text-sky-700 hover:text-sky-900 font-medium">
+            Learn more
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"
+                 fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ---------- 7. PARTNERS (card grid, v2) ------------------------------------- #}
+<section id="partners" class="bg-slate-50 py-20">
+  <div class="mx-auto max-w-7xl px-6">
+    <h2 class="section-h2">Institutional&nbsp;Support</h2>
+
+    <div class="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {% for partner in partner_logos %}
+        <article
+          class="flex flex-col rounded-2xl bg-white p-8 shadow-sm
+                 transition hover:shadow-lg">
+
+          <!-- Logo -->
+          <div class="flex h-20 items-center justify-center">
+            <img
+              src="{{ partner.image }}"
+              alt="{{ partner.name }} logo"
+              class="max-h-full w-auto object-contain
+                     group-hover:grayscale-0 group-hover:scale-105 duration-200"/>
+          </div>
+
+          <!-- Name -->
+          <h3 class="mt-6 text-lg font-semibold text-slate-900 text-center">
+            {{ partner.name }}
+          </h3>
+
+          <!-- Blurb -->
+          {% if partner.summary %}
+            <p class="mt-2 text-sm text-slate-600 text-center">
+              {{ partner.summary }}
+            </p>
+          {% endif %}
+
+          <!-- Optional link (remove if not needed) -->
+          {% if partner.url %}
+            <a href="{{ partner.url }}" target="_blank"
+               class="mt-6 inline-flex items-center justify-center gap-2 text-sky-700
+                      hover:text-sky-900 font-medium">
+              Learn more
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"
+                   fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          {% endif %}
+        </article>
       {% endfor %}
     </div>
   </div>
@@ -138,7 +257,7 @@
   <p class="mx-auto max-w-2xl text-xl font-medium">
     Share our vision? &nbsp;Let’s accelerate the future of remote care—together.
   </p>
-  <a href="mailto:connect@telehealthcareai.org" class="btn-secondary mt-6 border-white">
+  <a href="mailto:connect@telehealthcareai.org" class="btn btn-sm btn-secondary mt-6 border-white">
     Contact Us
   </a>
 </section>
