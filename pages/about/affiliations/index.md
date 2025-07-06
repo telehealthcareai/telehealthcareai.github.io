@@ -10,6 +10,7 @@ organizations:
       educators, and students by providing resources, tools, and a collaborative
       platform for sharing knowledge and advancing open science initiatives.
     image_url: /images/partners/osl.png
+    url: "https://opensciencelabs.org"
 
 projects:
   - name: Mhai
@@ -20,6 +21,7 @@ projects:
       and health care providers in the mental health area diagnostics and treatments
       using AI.
     image_url: https://mymhai.com/static/images/logo-big.png
+    url: "https://github.com/mentalhealthai-org/mhai"
 
   - name: SDX
     description: |
@@ -28,6 +30,7 @@ projects:
       computational platforms to support patients, doctors,
       and health care providers in diagnostics and treatments with AI.
     image_url: https://seconddx.com/static/images/logo-big.png
+    url: "https://github.com/seconddx/sdx"
 
 members:
   - name: Ivan Ogasawara
